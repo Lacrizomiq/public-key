@@ -9,8 +9,6 @@ function hashMessage(message) {
     return keccak256(utf8ToBytes(message))
 }
 
-hashMessage(message)
-
 /* Sign a message using a private key */
 function signMessage(msg) {
     const messageHash = hashMessage(msg)
